@@ -1,0 +1,1 @@
+### Think about putting main.py, update.py, watch.py, etc. scripts in app-root/scripts/ directory
