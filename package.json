@@ -1,0 +1,17 @@
+{
+    "name": "aqua-marine-app",
+    "version": "1.0.0",
+    "description": "A frontend framework combining Aqua language with Next.js and Strapi",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-aqua": "cd aqua-language && npm run build",
+        "start-next": "cd next-app && npm run dev",
+        "start-strapi": "cd strapi-db && npm run develop"
+    },
+    "author": "Elijah Ally",
+    "license": "MIT",
+    "dependencies": {
+    }
+}
