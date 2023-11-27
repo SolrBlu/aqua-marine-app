@@ -1,0 +1,8 @@
+Page: HelloWorldPage
+
+Layout: Basic
+Title: "Hello World"
+
+Display MESSAGE "Hello, World!"
+
+
