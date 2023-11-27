@@ -1,6 +1,4 @@
 def parse_aqua(file_path):
-    print("--- in: aqua_to_page_content.py ---")
-    print(f"reading and translating: {file_path}")
     content = {"message": "", "page_url": "", "comments": ""}
 
     with open(file_path, 'r') as file:

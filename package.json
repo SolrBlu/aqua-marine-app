@@ -5,13 +5,17 @@
     "main": "index.js",
     "scripts": {
         "start": "python3 main.py",
+        "dev": "concurrently \"npm run start-next\" \"python3 -u watch.py\"",
         "test": "echo \"Error: no test specified\" && exit 1",
         "build-aqua": "cd aqua-language && npm run build",
-        "start-next": "cd next-app && npm run dev",
+        "start-next": "cd nextjs-app && npm run dev",
         "start-strapi": "cd strapi-db && npm run develop"
     },
     "author": "Elijah Ally",
     "license": "MIT",
     "dependencies": {
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
     }
 }
