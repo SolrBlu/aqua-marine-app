@@ -14,9 +14,10 @@ We like to think of all the languages, services, and proccesses used for web dev
 4. The point is most people want control over there website look AND functionality with minimal learning required, and without having to pay for a service like Wix/WordPress/Squarespace/etc.
 5. It's about time you can code a website in English, without needing to understand what's going on under the hood... but it's all there if you want too :)
 
-##### Example use case:
- - Start a new project and build out the basic layout, git control, and deployment
- - Once you know the direction you want to go in that may require additional/unique functionality, or you get some traffic to your site, hire a dev to finish/maintain your app 
+##### Example use cases:
+1. You have some experience coding, but maybe frontend is not your expertise and you want a finished product fast, with the option to go in later and learn/update the underlying Next.js code. You can stop using our abstraction at ANY TIME without compromising the underlying code that makes your app work. In fact, you can run [this script] we provide from the root of your AquaMarine project to remove all folders and files related to our abstraction, and you're left with next.js, strapi, an updated package.json, and a much more familiar app structure to continue development.
+
+2. Start a new project and build out the basic layout, git control, and deployment. Once you know the direction you want to go in that may require additional/unique functionality, or you get some traffic to your site, hire a dev to finish/maintain your app
 
 ## Components - What you need to learn to publish a website to the www
 - **GitHub-version-control**: You're using it :) [Learn More](https://en.wikipedia.org/wiki/GitHub)
@@ -47,6 +48,34 @@ npm install
 ### Usage
 
 Describe how to use the Aqua language and how to run the Next.js and Strapi applications.
+
+### Removing All Aqua Code: CAUTION!
+
+```
+# CAUTION!!! Read it all before running script! There is no undo script, besides "cmd + z"
+#
+#
+# Script to copy/paste to your command line and run:
+
+rm -rf aqua-language/ (what else...)
+
+#
+# Exactly what folders and files are deleted...
+- aqua-language/ (And everything it contains, you've been warned!)
+- watch.py
+- 
+#
+# In files that are altered, but not deleted, what is changed...
+- Package.json:
+  - Scripts:
+    - "dev":
+      - From: "concurrently \"npm run start-next\" \"python3 -u watch.py\""
+      - To: "npm run start-next"
+- README.md:
+  - From: [The provided Aqua README.md]
+  - To: [A blank README.md file to be edited] 
+```
+
 
 ### Contributing
 
