@@ -1,10 +1,10 @@
 
-function Home() {
+function Index() {
     return (
         <main>
-            <h1>Ok, now that's awesome! niccce</h1>
+            <h1>just the home page</h1>
         </main>
     );
 }
 
-export default Home;
+export default Index;
